@@ -19,7 +19,7 @@
           <p class="mt-2">{{ vacancy.specialty.title }} • {{ vacancy.skills }}</p>
           <p class="text-muted mb-4">{{ vacancy.company.title }} ({{ vacancy.company.employee_count }} человек), {{ vacancy.company.location }} или удаленно</p>
           <div style="line-height: 1.8;">
-            {{ vacancy.description }}
+            {{ vacancy.description | safe }}
           </div>
 
 
